@@ -1,0 +1,526 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Heritage Tour</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg" id="navbar">
+  <div class="container">
+      <a class="navbar-brand" href="index.html" id="logo"><span>S</span>mart Heritage Tour</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#book">Book</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#packages">Sanctuary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#review">Review</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" target="_main" href="Interactive-map/map.html">Map</a>
+              </li>
+              <!-- Hamburger Menu -->
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="hamburgerMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      More
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="hamburgerMenu">
+                      <li><a class="dropdown-item" href="#disclaimer">Disclaimer</a></li>
+                      <li><a class="dropdown-item" href="#gallary">Gallery</a></li>
+                      <li><a class="dropdown-item" href="review.html">Feedback</a></li>
+                      <li><a class="dropdown-item" href="#about">About US</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+      
+
+      <!-- Home Section Start -->
+    <div class="home">
+        <div class="content">
+            <h5>Welcome To INDIA</h5>
+            <h1>Visit <span class="changecontent"></span></h1>
+            <p>India: A land of colors, traditions, heritage, diversity, and spirituality.</p>
+            <a href="#book">Book Place</a>
+        </div>
+    </div>
+    
+    <!-- Section Book Start -->
+    <section class="book" id="book">
+      <div class="container">
+
+        <div class="main-text">
+          <h1><span>B</span>ook</h1>
+        </div>
+        
+        <div class="row">
+
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="/Smart-Heritage-Tour/images/book-img.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <form action="/Smart-Heritage-Tour/save.php" method="post">
+                <label for="Where_To">Where To:</label>
+                <input type="text" id="Where_To" name="Where_To" class="form-control" placeholder="Where To" required><br>
+        
+                <label for="How_Many">How Many:</label>
+                <input type="number" id="How_Many" name="How_Many" class="form-control" placeholder="How Many" required><br>
+        
+                <label for="Arrivals">Arrivals:</label>
+                <input type="date" id="Arrivals" name="Arrivals" class="form-control" required><br>
+        
+                <label for="Leaving">Leaving:</label>
+                <input type="date" id="Leaving" name="Leaving" class="form-control" required><br>
+        
+                <label for="Feedback">Feedback:</label>
+                <textarea id="Feedback" class="form-control" rows="5" name="Feedback" placeholder="Enter Your Name & Details"></textarea><br>
+        
+                <input type="submit" value="Book Now" class="btn btn-primary">
+            </form>
+        </div>        
+
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section Sanctuary Start -->
+    <section class="packages" id="packages">
+      <div class="container">
+        
+        <div class="main-txt">
+          <h1><span>S</span>anctuary</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="/Smart-Heritage-Tour/images/tajmahal.png" alt="">
+              <div class="card-body">
+                <h3>Taj Mahal</h3>
+                <p>Taj Mahal, a majestic wonder, timeless beauty, and a symbol of love.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                </div>
+                <div class="booked"><a href="https://en.wikipedia.org/wiki/Taj_Mahal">Explore</a></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="/Smart-Heritage-Tour/images/kedarnath.jpg" alt="">
+              <div class="card-body">
+                <h3>Kedarnath Temple </h3>
+                <p>Kedarnath Temple, a sacred haven, nestled in mountains, peace, devotion, and divinity.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                </div>
+                <div class="booked"><a href="https://en.wikipedia.org/wiki/Kedarnath_Temple">Explore</a></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="/Smart-Heritage-Tour/images/jama-masjid.jpg" alt="">
+              <div class="card-body">
+                <h3>Jama Masjid</h3>
+                <p>Jama Masjid, a masterpiece of Mughal era, grandeur, faith, history, and unity.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                </div>
+                <div class="booked"><a href="https://en.wikipedia.org/wiki/Jama_Masjid,_Delhi">Explore</a></div>
+              </div>
+            </div>
+
+          </div>
+
+      </div>
+
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="/Smart-Heritage-Tour/images/golden-tample.jpg" alt="">
+              <div class="card-body">
+                <h3>Golden Temple</h3>
+                <p>The Golden Temple in Punjab is a sacred, peaceful, and historic religious site.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                </div>
+                <div class="booked"><a href="https://en.wikipedia.org/wiki/Golden_Temple">Explore</a></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="/Smart-Heritage-Tour/images/church.jpeg" alt="">
+              <div class="card-body">
+                <h3>Basilica of Bom Jesus</h3>
+                <p>The Basilica of Bom Jesus in Goa is a UNESCO World Heritage site.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                </div>
+                <div class="booked"><a href="https://en.wikipedia.org/wiki/Basilica_of_Bom_Jesus">Explore</a></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="/Smart-Heritage-Tour/images/temple.jpg" alt="">
+              <div class="card-body">
+                <h3>Meenakshi Amman Temple</h3>
+                <p>The Meenakshi Amman Temple in Madurai is a stunning example of Dravidian architecture.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                </div>
+                <div class="booked"><a href="https://en.wikipedia.org/wiki/Meenakshi_Temple">Explore</a></div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </section>
+    
+    <!-- Section Services Start -->
+    <section class="services" id="services">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1><span>S</span>ervices</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-hotel"></i>
+              <div class="card-body">
+                <a class="card-link" href="Hotel-Website-main/hotel.html" target="_main">Affordable Hotel</a>
+                <p>Experience comfort and heritage at unbeatable prices, always affordable.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-utensils"></i>
+              <div class="card-body">
+                <a class="card-link" href="Food Website/index.html">Food & Drinks</a>
+                <p>Enjoy a variety of delicious foods and refreshing drinks daily.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-bullhorn"></i>
+              <div class="card-body">
+                <a class="card-link" href="safty-guide.html">Safty Guide</a>
+                <p>Your safety is our priority with comprehensive, reliable safety measures.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-globe-asia"></i>
+              <div class="card-body">
+                <a class="card-link" href="Interactive-map/map.html">Around The World</a>
+                <p>Select a location on the map in India to begin your journey.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-plane"></i>
+              <div class="card-body">
+                <a class="card-link" target="_blank" href="https://www.airindia.com/">Fastest Travel</a>
+                <p>Flights, cabs, and bikes travel swiftly across continents, breaking distance barriers effortlessly.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-hiking"></i>
+              <div class="card-body">
+                <a class="card-link" href="adventure.html">Adventures</a>
+                <p>Embarking on thrilling journeys, explorers uncover hidden treasures worldwide.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- User Review Section Start -->
+<section class="review" id="review">
+  <div class="container">
+    <div class="main-txt">
+      <h1><span>R</span>eviews</h1>
+    </div>
+
+    <div class="reviews">
+      <div class="review-slider">
+          <div class="review-card">
+              <img src="https://imgs.search.brave.com/nDIJRuWLgjThAnKY1lW1zv0waEFQakgbpMiC8Jy-_rQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2VlLzM5/L2MwL2VlMzljMDg3/MDI2MGMxODNhZmZm/YTBhMDFkYmY0MmJm/LmpwZw" alt="User Image">
+              <h3>Rohan Sharma</h3>
+              <p>Amazing experience! The site beautifully captures India's heritage.</p>
+              <div class="stars">★★★★★</div>
+          </div>
+          <div class="review-card">
+              <img src="https://imgs.search.brave.com/aL6yNnNy420kCmDOkmUmSE5yaI2fFGHeCUVyuyYJ2o0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly92aXNh/Zm90by5jb20vaW1n/L3NvdXJjZTM1NXgz/ODhfaW4uanBn" alt="User Image">
+              <h3>Ananya Singh</h3>
+              <p>Informative and engaging! Highly recommend visiting this site.</p>
+              <div class="stars">★★★★☆</div>
+          </div>
+          <div class="review-card">
+              <img src="https://imgs.search.brave.com/8P-m_Xiz2-lzeqaILlotFtli68wWlRFpVjolQ6egCpM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2Y3L2Fm/L2JiL2Y3YWZiYmQ2/YzgwZjEyM2Y3Yjcz/YjVhNzFhZWZkMWYw/LmpwZw" alt="User Image">
+              <h3>Vikram Gupta</h3>
+              <p>A treasure trove of information about Indian heritage. Loved it!</p>
+              <div class="stars">★★★★★</div>
+          </div>
+          <div class="review-card">
+              <img src="https://imgs.search.brave.com/UhrnPtumUzNTKKQqM9Xdv03pdYFYQ3GSmrNdu0pPsNI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wYXNz/cG9ydC1waG90by5v/bmxpbmUvaW1hZ2Vz/L2Ntcy8yY2FlNzM1/NWE1ZmExMDdiMzQ5/NGNiYjQ0OGE0MWRl/Yl8yYzA0MmVhZDQ3/LndlYnA_cXVhbGl0/eT04MCZmb3JtYXQ9/d2VicCZ3aWR0aD0x/OTIw" alt="User Image">
+              <h3>jaspreet kaur</h3>
+              <p>The animations and details are stunning. Great work!</p>
+              <div class="stars">★★★★★</div>
+          </div>
+          <div class="review-card">
+              <img src="https://imgs.search.brave.com/FAOLvxamEYZhURZaiimh_d4Tm4_4hJCO98LPUqo2r4w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2MzLzMz/LzI3L2MzMzMyNzNm/Y2ZjMzE5OGU5M2Rm/MzgwYzBjZmMwNDM3/LmpwZw" alt="User Image">
+              <h3>Arjun Pillai</h3>
+              <p>An excellent initiative to showcase our rich heritage.</p>
+              <div class="stars">★★★★☆</div>
+          </div>
+      </div>
+  </div>
+
+  <div class="reviews">
+    <div class="review-slider">
+        <div class="review-card">
+            <img src="https://imgs.search.brave.com/Eyubtg8BoxrPfgH1UUzUsQSu1yC9tXIop4oip61hYLw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDM5ODkz/MTQuanBn" alt="User Image">
+            <h3>Arbaz Ansari</h3>
+            <p>Absolutely stunning! The website is a perfect blend of culture and technology. A must-visit!</p>
+            <div class="stars">★★★★★</div>
+        </div>
+        <div class="review-card">
+            <img src="https://imgs.search.brave.com/cE61hUBOTDwZkxVLw8HGmdwIi_TTwAkZox9EQXgGK1E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMw/MTYwMzI0Ny9waG90/by9zdHVkaW8tcG9y/dHJhaXQtb2YtYS1z/aWtoLWhhbmRzb21l/LW1hbi1sb29raW5n/LWF0LWNhbWVyYS13/aXRoLXNtaWxlLmpw/Zz9iPTEmcz0xNzA2/NjdhJnc9MCZrPTIw/JmM9SjE4Nk13bUhC/bFRUbWtqQ25ZX2Vn/U0dEbW55di1SODIt/LUROc0hsUWFJcz0" alt="User Image">
+            <h3>Jassi Kaur</h3>
+            <p>Incredible! The attention to detail is unmatched. I felt like I was traveling through time.</p>
+            <div class="stars">★★★★☆</div>
+        </div>
+        <div class="review-card">
+            <img src="https://imgs.search.brave.com/H7ajtlXPeliMlZFnpd0qxoKIhUB7VoiWdqMwRkI4eb8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA5LzA2LzY2LzYz/LzM2MF9GXzkwNjY2/NjM5MV9tbmpyVUpk/SkhSak5oZURYOGk0/MUo4VXhIRnNjS3Yw/UC5qcGc" alt="User Image">
+            <h3>Tony D'Souza</h3>
+            <p>What a journey! The site captures India's rich heritage so beautifully. It's educational and captivating.</p>
+            <div class="stars">★★★★★</div>
+        </div>
+        <div class="review-card">
+            <img src="https://imgs.search.brave.com/93__NCwj2P_SS1Zn6FlDI2YN_4PXEFFRuWkdX1wrJQU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQw/ODI0ODEwL3Bob3Rv/L2J1c2luZXNzbWFu/LXNtaWxpbmctd2l0/aC1hcm1zLWNyb3Nz/ZWQuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPThsQ29FNUNk/Tng5TjhiU2pzdExR/a25iUEkwMDBOSHhE/RHd1Rzh6UllRaTg9" alt="User Image">
+            <h3>Harpreet Singh</h3>
+            <p>I'm in awe! The seamless integration of animations with cultural content is truly innovative. Brilliant work!</p>
+            <div class="stars">★★★★★</div>
+        </div>
+        <div class="review-card">
+            <img src="https://imgs.search.brave.com/3e3NpgCzLytGBkNPVwjmLJaHzV8ERz83wYkj_z-TBeU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9waG90/b2dvdi1jb20uYWth/bWFpemVkLm5ldC9l/eGFtcGxlcy9pbi1w/YXNzcG9ydC0zNXg0/NW1tLXBob3RvL2xh/bmRtYXJrcy1JTi53/ZWJw" alt="User Image">
+            <h3>Arsalan Khan</h3>
+            <p>What a wonderful experience! The site beautifully showcases the depth and diversity of our heritage. Highly recommend!</p>
+            <div class="stars">★★★★☆</div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+    <!-- Section Gallary Start -->
+    <section class="gallary" id="gallary">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1><span>G</span>allary</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="https://wallpaperaccess.com/full/1315403.jpg" alt="boat" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="https://wallpaperaccess.com/full/1385996.jpg" alt="Taj_Mahal" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="https://wallpaperaccess.com/full/1386003.jpg" alt="India_Gate" height="230px">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="https://wallpaperaccess.com/full/1386021.jpg" alt="Red_Fort" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="https://wallpaperaccess.com/full/1386035.jpg" alt="Goa" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="https://wallpaperaccess.com/full/13588700.jpg" alt="Taj_Hotel" height="230px">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- About Start -->
+    <section class="about" id="about">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1>About <span>Us</span></h1>
+        </div>
+
+        <div class="row" style="margin-top: 50px;">
+
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="/Smart-Heritage-Tour/images/about-img.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <h2>How Travel Agency Work</h2>
+            <p>A travel agency helps clients plan trips by offering services like booking flights, accommodations, tours, and activities. They provide expert advice, customize travel packages, and handle logistics. Agencies work with airlines, hotels, and other providers to ensure seamless experiences for travelers. Their goal is to make travel planning easy and stress-free.</p>
+            <a href="#about"><button id="about-btn">Read More...</button></a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- Footer Start -->
+    <footer id="footer">
+      <h1><span>S</span>mart Heritage Tour</h1>
+      <p>India: A land of colors, traditions, heritage, diversity, and spirituality.</p>
+      <div class="social-links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </div>
+      <div class="credit">
+        <p>Designed By <a href="#">Arbaz Ahmad Ansari</a></p>
+      </div>
+      <div class="copyright">
+        <p>&copy;Copyright MCA GU. All Rights Reserved</p>
+      </div>
+    </footer>
+    <div class="copy-right">
+      <div class="copy-right-container">
+         <div class="copy-rights-main">
+              <p>© 2025 All Rights Reserved | Design by Arbaz Ahmad Ansari</a> </p>
+           </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
