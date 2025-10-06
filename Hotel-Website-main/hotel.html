@@ -1,0 +1,389 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Smart Heritage Tour's Hotel</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- Custom Theme files -->
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Smart Heritage Tour Hotel, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Hind:400,300' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Aladin' rel='stylesheet' type='text/css'>
+<!--google fonts-->
+        <script src="js/wow.min.js"></script>
+        <script>
+         new WOW().init();
+        </script>
+<!-- animated-css (vanilla) -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var isTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
+        var branchCards = document.querySelectorAll('.branch-gd');
+        var closeButtons = document.querySelectorAll('.close-overlay');
+
+        if (isTouch) {
+            closeButtons.forEach(function(btn){ btn.classList.remove('hidden'); });
+            branchCards.forEach(function(card){
+                card.addEventListener('click', function(){
+                    if (!card.classList.contains('hover')) {
+                        card.classList.add('hover');
+                    }
+                });
+            });
+            closeButtons.forEach(function(btn){
+                btn.addEventListener('click', function(e){
+                    e.preventDefault();
+                    e.stopPropagation();
+                    var parent = btn.closest('.branch-gd');
+                    if (parent && parent.classList.contains('hover')) {
+                        parent.classList.remove('hover');
+                    }
+                });
+            });
+        } else {
+            branchCards.forEach(function(card){
+                card.addEventListener('mouseenter', function(){ card.classList.add('hover'); });
+                card.addEventListener('mouseleave', function(){ card.classList.remove('hover'); });
+            });
+        }
+    });
+</script>
+
+
+</head>
+<body>
+<!--header start here-->
+   <!-- Navbar Start -->
+   <nav class="navbar navbar-expand-lg" id="navbar">
+	<div class="container">
+		<a class="navbar-brand" href="../index.html" id="logo"><span>S</span>mart Heritage Tour</a>
+		<div class="collapse navbar-collapse" id="mynavbar">
+			<ul class="navbar-nav me-auto">
+				<li class="nav-item">
+				<a class="nav-link active" href="hotel.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="services.html">Services</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="room.html">Rooms</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="single.html">Review</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" target="_main" href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+  </nav>
+
+<!--header end here-->
+<!--banner  start hwew-->
+<div class="banner">
+	<div class="container">
+		<div class="banner-main wow zoomIn" data-wow-delay="0.3s">
+			<h2>Smart Heritage Tour's Hotels</h2>
+			<h6>Welcome To Our Hotels</h6>
+			<p>Welcome to Hotel, where timeless elegance meets modern luxury, offering exceptional accommodations, top-tier safety standards, quality services, and unforgettable experiences, setting the benchmark in excellence since 1999.</p>
+		</div>
+    </div>
+</div>
+<!--BANNER END HERE-->
+<!--information start here-->
+<div class="information">
+	<div class="container">
+		<div class="information-main">
+			  <div class="information-grid five-star wow slideInLeft" data-wow-delay="0.3s">
+			  	<div class="col-md-4 hotel-info">
+			  		<div class="info-left">
+			  			<img src="images/s1.png" alt="">
+			  		</div>
+			  		<div class="info-right">
+			  			<h4>Star Hotel</h4>
+			  			<p>Experience luxury, comfort, and elegance at Our Hotel, your perfect destination for unforgettable stays.</p>
+			  		</div>
+			  	  <div class="clearfix"> </div>
+			  	</div>
+			  	<div class="col-md-4 hotel-info">
+			  		<div class="info-left">
+			  			<img src="images/s2.png" alt="">
+			  		</div>
+			  		<div class="info-right">
+			  			<h4>services</h4>
+			  			<p>Offering premium services including 24/7 room service, concierge assistance, free Wi-Fi, spa, and gym.</p>
+			  		</div>
+			  	  <div class="clearfix"> </div>
+			  	</div>
+			  	<div class="col-md-4 hotel-info">
+			  		<div class="info-left">
+			  			<img src="images/s4.png" alt="">
+			  		</div>
+			  		<div class="info-right">
+			  			<h4>Secure</h4>
+			  			<p>Prioritizing your safety with 24/7 security, advanced surveillance, secure entry, and trained personnel.</p>
+			  		</div>
+			  	  <div class="clearfix"> </div>
+			  	</div>
+			  	<div class="clearfix"> </div>
+			  </div>
+			  <div class="information-grid wow slideInRight" data-wow-delay="0.3s">
+			  	<div class="col-md-4 hotel-info">
+			  		<div class="info-left">
+			  			<img src="images/s3.png" alt="">
+			  		</div>
+			  		<div class="info-right">
+			  			<h4>Food</h4>
+			  			<p>Savor delicious, freshly prepared meals with diverse cuisines, fine dining, and personalized food experiences.</p>
+			  		</div>
+			  	  <div class="clearfix"> </div>
+			  	</div>
+			  	<div class="col-md-4 hotel-info">
+			  		<div class="info-left">
+			  			<img src="images/s5.png" alt="">
+			  		</div>
+			  		<div class="info-right">
+			  			<h4>Hotel</h4>
+			  			<p>Delight in a variety of culinary experiences with gourmet dishes, international flavors, and impeccable service.</p>
+			  		</div>
+			  	  <div class="clearfix"> </div>
+			  	</div>
+			  	<div class="col-md-4 hotel-info">
+			  		<div class="info-left">
+			  			<img src="images/s6.png" alt="">
+			  		</div>
+			  		<div class="info-right">
+			  			<h4>Bell</h4>
+			  			<p>Experience seamless service with our professional bell staff, ready to assist with luggage and guest needs.</p>
+			  		</div>
+			  	  <div class="clearfix"> </div>
+			  	</div>
+			  	<div class="clearfix"> </div>
+			  </div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--information end here-->
+<!--leaves start here-->
+<div class="leaves">
+	<div class="container">
+		<div class="leaves-main wow zoomIn" data-wow-delay="0.3s">
+			<h1>You Never Leave Us</h1>
+			<h6>100% Friendly services</h6>
+			<p>Welcome to Hotel, where timeless elegance meets modern luxury, offering exceptional accommodations, top-tier safety standards, quality services, and unforgettable experiences, setting the benchmark in excellence since 1999.</p>
+		   <a href="single.html" class="hvr-push">Discover More</a>
+		</div>
+	</div>
+</div>
+<!--leaves end here-->
+<!--branches start here-->
+<div class="branches">
+		<div class="branches-main wow zoomIn" data-wow-delay="0.3s">
+			<div class="branches-top">
+				<h3>Our Branches</h3>
+			</div>
+			<div  id="effect-5" class="branch-btm">
+				<div  class="col-md-3 branch-gd-main" >					
+					<div class="branch-gd  no-mar"> <a href="room.html">
+						<img src="images/b6.jpg" alt="" class="img-responsive">
+						<div class="overlay">
+		                    <span class="expand lardge">+</span>
+		                    <span class="close-overlay hidden">x</span>
+	                   </div></a>
+                    </div>                 
+				</div>				
+				<div class="col-md-3 branch-gd-main">
+					<div class="branch-gd went-branc"><a href="room.html">
+						<img src="images/b1.jpg" alt="" class="img-responsive">
+						<div class="overlay">
+		                    <span class="expand">+</span>
+		                    <span class="close-overlay hidden">x</span>
+	                   </div></a>
+					</div>
+					<div class="branch-gd went-branc"><a href="room.html">
+						<img src="images/b2.jpg" alt="" class="img-responsive">
+						<div class="overlay">
+		                    <span class="expand">+</span>
+		                    <span class="close-overlay hidden">x</span>
+	                 </div></a>
+					</div>
+				</div>
+				<div class="col-md-3 branch-gd-main">
+					<div class="branch-gd"><a href="room.html">
+						<img src="images/b3.jpg" alt="" class="img-responsive">
+						<div class="overlay">
+		                    <span class="expand">+</span>
+		                    <span class="close-overlay hidden">x</span>
+	                 </div></a>
+					</div>
+					<div class="branch-gd"><a href="room.html">
+						<img src="images/b4.jpg" alt="" class="img-responsive">
+						<div class="overlay">
+		                    <span class="expand">+</span>
+		                    <span class="close-overlay hidden">x</span>
+	                 </div></a>
+					</div>
+				</div>
+				<div class="col-md-3 branch-gd-main">
+				  <div class="branch-gd went-branc2"><a href="room.html">
+					<img src="images/b5.jpg" alt="" class="img-responsive">
+					<div class="overlay">
+		                    <span class="expand lardge">+</span>
+		                    <span class="close-overlay hidden">x</span>
+	                   </div></a>
+                  </div>
+				</div>
+			</div>
+		  <div class="clearfix"> </div>
+		</div>
+</div>
+<!--branches end here-->
+<div class="branch-text">
+   <div class="container">
+			<span class="quotations"> </span>
+			<p>Welcome to our luxurious hotel, where comfort meets elegance, offering spacious rooms, exquisite dining, a relaxing spa, and exceptional service for an unforgettable stay, whether traveling for business or leisure, located in the heart of the city with stunning views, convenient amenities, and personalized experiences designed to exceed your expectations and create cherished memories during your visit to our world-class destination.</p>
+  </div>
+</div>
+<!--swiming-->
+<div class="swimming">
+	<div class="container">
+		<div class="swimming-main wow zoomIn" data-wow-delay="0.3s">
+			<div class="swimming-top">
+				<h3>Welcome</h3>
+			</div>
+			<div class="swimmimg-bot">
+				<div class="col-md-3 swimming-grid">
+					<h4>758</h4>
+					<span class="swim-icon-1"> </span>
+					<h5>Global Visitors</h5>
+				</div>
+				<div class="col-md-3 swimming-grid">
+					<h4>4,790</h4>
+					<span class="swim-icon-2"> </span>
+					<h5>Rooms Refreshed</h5>
+				</div>
+				<div class="col-md-3 swimming-grid">
+					<h4>7,920</h4>
+					<span class="swim-icon-3"> </span>
+					<h5>Food & Chefs</h5>
+				</div>
+				<div class="col-md-3 swimming-grid">
+					<h4>190</h4>
+					<span class="swim-icon-4"> </span>
+					<h5>Destinations Connected</h5>
+				</div>
+			  <div class="clearfix"> </div>
+			</div>
+ </div>
+ </div>
+ </div>
+<!--swimmg emd here-->
+<!--homegrids start here-->
+<div class="home-block">
+	<div class="container">
+		<div class="home-main">
+			<div class="home-top">
+				<h3>Latest  News</h3>
+			</div>
+			<div class="home-bottom  wow bounceInLeft" data-wow-delay="0.3s">
+				<div class="col-md-4 home-grid">
+					<div class="item item-type-move">
+						<a class="item-hover" href="single.html">						
+							<div class="item-info">
+								<div class="headline">
+									Our Rooms
+									<div class="line"> </div>
+								</div>
+								<div class="date">December 27, 2024</div>							
+							</div>
+							<div class="mask"> </div>
+					    </a>
+						<div class="item-img">
+								<img src="images/b7.jpg" class="img-responsive" alt="">
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-4 home-grid">
+					<div class="item item-type-move">
+						<a class="item-hover" href="single.html">						
+							<div class="item-info">
+								<div class="headline">
+									Our Rooms
+									<div class="line"> </div>
+								</div>
+								<div class="date">January 10, 2025</div>							
+							</div>
+							<div class="mask"> </div>
+					    </a>
+						<div class="item-img">
+								<img src="images/b8.jpg" class="img-responsive" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 home-grid">
+					<div class="item item-type-move">
+						<a class="item-hover" href="single.html">						
+							<div class="item-info">
+								<div class="headline">
+									Our Rooms
+									<div class="line"> </div>
+								</div>
+								<div class="date">January 15, 2025</div>							
+							</div>
+							<div class="mask"> </div>
+					    </a>
+						<div class="item-img">
+								<img src="images/b9.jpg" class="img-responsive" alt="">
+						</div>
+					</div>
+				</div>
+			  <div class="clearfix"> </div>
+			</div>
+		  <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--home grid end here-->
+<!-- Footer Start -->
+<footer id="footer">
+	<h1><span>S</span>mart Heritage Tour</h1>
+	<p>India: A land of colors, traditions, heritage, diversity, and spirituality.</p>
+	<div class="social-links">
+	  <i class="fa-brands fa-twitter"></i>
+	  <i class="fa-brands fa-facebook"></i>
+	  <i class="fa-brands fa-instagram"></i>
+	  <i class="fa-brands fa-youtube"></i>
+	  <i class="fa-brands fa-pinterest-p"></i>
+	</div>
+	<div class="credit">
+	  <p>Designed By <a href="#">Arbaz Ahmad Ansari</a></p>
+	</div>
+	<div class="copyright">
+	  <p>&copy;Copyright MCA GU. All Rights Reserved</p>
+	</div>
+  </footer>
+<!--copy rights start here-->
+<div class="copy-right">
+	<div class="copy-right-container">
+		 <div class="copy-rights-main" data-wow-delay="0.3s">
+    	    <p>© 2025 All Rights Reserved | Design by Arbaz Ahmad Ansari</p>
+    	 </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
