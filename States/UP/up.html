@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourism Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+  }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url("images/background img.png") center/cover no-repeat;
+      color: #fff;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      filter: blur(8px);
+      z-index: -1;
+    }
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 230px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Uttar Pradesh</h1>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-6">
+        <div class="card bg-light text-dark">
+          <img src="images/taj-mahal.jpg" alt="Taj Mahal" class="card-img-top">
+          <div class="card-body">
+            <a href="taj-mahal.html"><h5 class="card-title">Taj Mahal (Agra)</h5></a>
+            <p class="card-text">If there was just one symbol to represent all of India, it would be the Taj Mahal.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-6">
+        <div class="card bg-light text-dark">
+          <img src="images/varansi.jpg" alt="Varanasi Ghats" class="card-img-top">
+          <div class="card-body">
+            <a href="varansi.html"><h5 class="card-title">Varanasi Ghats (Varanasi)</h5></a>
+            <p class="card-text">one of the oldest cities, is famed for its sacred Ganges ghats and spiritual traditions.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-6 mx-auto">
+        <div class="card bg-light text-dark">
+        <img src="images/fatehpur-sikri.jpg" alt="Fatehpur Sikri" class="card-img-top">
+        <div class="card-body">
+          <a href="fatehpur.html"><h5 class="card-title">Fatehpur Sikri (Agra)</h5></a>
+          <p class="card-text">Fatehpur Sikri, Akbar's city, is renowned for its unique blend of architectural styles.</p>
+      </div>
+    </div>
+</div>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

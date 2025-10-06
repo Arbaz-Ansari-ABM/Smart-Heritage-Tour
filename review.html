@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Heritage India - User Reviews</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(images/OG\ background\ img.png);
+            background-size: cover;
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffa500;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            font-size: 2rem;
+        }
+        .head {
+             text-align: center;
+             text-decoration: underline;
+        }
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(210, 210, 210, 0.496);
+            backdrop-filter: blur(8px); 
+            border: 0.5px solid black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .review-form {
+            margin-bottom: 30px;
+            margin-right: 1.6rem;
+        }
+        .review-form h2 {
+            margin-bottom: 15px;
+        }
+        .review-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .review-form input, .review-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        .review-form button {
+            background-color: #ffa500;;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .review-form button:hover {
+            background-color: #7b5000;;
+        }
+        .reviews {
+            margin-top: 30px;
+        }
+        .review {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .review h3 {
+            margin: 0 0 5px;
+        }
+        .review p {
+            margin: 0;
+        }
+        .review .date {
+            font-size: 0.9rem;
+            color: gray;
+        }
+        .review img {
+            max-width: 200px;
+            margin-top: 10px;
+        }
+        .review {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white; 
+            border-radius: 5px;
+        }
+
+        .review h3 {
+            margin: 0 0 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .review p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .review .date {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+
+        .review h3, .review p, .review .date {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        Give us Feedback
+    </header>
+    <div class="container">
+        <div class="review-form">
+            <h2 class="head">Submit Your Review</h2>
+            <form id="reviewForm" enctype="multipart/form-data">
+                <label for="username">Name</label>
+                <input type="text" id="username" name="username" placeholder="Enter your name" required>
+                <label for="review">Your Review</label>
+                <textarea id="review" name="review" rows="5" placeholder="Write your review here" required></textarea>
+                <label for="image">Upload an Image (optional)</label>
+                <input type="file" id="image" name="image" accept="image/*">
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+        <div class="reviews" id="reviewsSection">
+            <h2>What People Are Saying</h2>
+            <!-- User reviews will appear here -->
+        </div>
+    </div>
+
+    <script>
+        const reviewForm = document.getElementById('reviewForm');
+        const reviewsSection = document.getElementById('reviewsSection');
+
+        reviewForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const reviewText = document.getElementById('review').value;
+            const imageFile = document.getElementById('image').files[0];
+
+            if (username && reviewText) {
+                const reviewDiv = document.createElement('div');
+                reviewDiv.classList.add('review');
+                const currentDate = new Date().toLocaleDateString();
+
+                // Handle image display if uploaded
+                let imageHtml = '';
+                if (imageFile) {
+                    const imageUrl = URL.createObjectURL(imageFile);
+                    imageHtml = `<img src="${imageUrl}" alt="Review Image">`;
+                }
+
+                reviewDiv.innerHTML = `
+                    <h3>${username}</h3>
+                    <p>${reviewText}</p>
+                    ${imageHtml}
+                    <p class="date">Reviewed on: ${currentDate}</p>
+                `;
+
+                reviewsSection.appendChild(reviewDiv);
+                reviewForm.reset();
+            } else {
+                alert('Please fill in all fields before submitting.');
+            }
+        });
+    </script>
+</body>
+</html>

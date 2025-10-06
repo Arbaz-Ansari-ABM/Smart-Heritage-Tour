@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Vehicle Booking</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        * {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #ffa500;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav h1 {
+            font-size: 32px;
+            color: white;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 30px; /* Space below the navigation */
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 22%;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Choose Your Vehicle</h1>
+    </nav>
+    <div class="container">
+        <div class="section" id="bike">
+            <h2>Bike</h2>
+            <p>Choose your bike for an adventurous ride.</p>
+            <a href="#"><button>Book Now</button></a>
+        </div>
+        <div class="section" id="flights">
+            <h2>Flights</h2>
+            <p>Book a flight to your dream destination.</p>
+            <a href="#"><button>Book Now</button></a>
+        </div>
+        <div class="section" id="taxi">
+            <h2>Taxi</h2>
+            <p>Need a ride? Book a taxi now!</p>
+            <a href="#"><button>Book Now</button></a>
+        </div>
+        <div class="section" id="trains">
+            <h2>Trains</h2>
+            <p>Travel in comfort with our train services.</p>
+            <a href="#"><button>Book Now</button></a>
+        </div>
+    </div>
+</body>
+</html>
