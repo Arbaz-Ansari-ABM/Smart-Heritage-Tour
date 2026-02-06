@@ -1,0 +1,134 @@
+﻿body {
+  background: linear-gradient(135deg, #1e5799, #2989d8, #207cca, #7db9e8);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#mapwrapper {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 0;
+  background-color: transparent;
+  min-width: 220px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+#visnames {
+  font-size: 16px;
+}
+#mapbase svg {
+  max-height: 100%;
+  width: 100%;
+  margin: 0;
+  -webkit-filter: drop-shadow( 1px 1px 2px rgba(0, 0, 0, 0.2) ); 
+    filter: drop-shadow( 1px 1px 2px rgba(0, 0, 0, 0.2) );
+}
+
+/* Add hover effects for map elements */
+#mapbase svg path {
+  transition: all 0.3s ease;
+  fill: #f8f8f8;
+  stroke: #666;
+  stroke-width: 0.5;
+}
+
+#mapbase svg path:hover {
+  fill: #ffcc00;
+  stroke: #333;
+  stroke-width: 1;
+  transform: scale(1.02);
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+@media screen and (max-width: 320px){
+  #mapbase svg {
+    height:270px;
+  }
+}
+@media screen and (max-width: 400px) and (min-width: 321px) {
+  #mapbase svg {
+    height:320px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 401px) {
+  #mapbase svg {
+    height:400px;
+  }
+}
+@media screen and (max-width: 568px) and (min-width: 481px) {
+  #mapbase svg {
+    height:480px;
+  }
+}
+@media screen and (max-width: 685px) and (min-width: 569px) {
+  #mapbase svg {
+    height:550px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 686px) {
+  #mapbase svg {
+    height:560px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #mapbase svg {
+    height:590px;
+  }
+}
+/* THIS IS TO HIDE AN AREA IF NEEDED
+#tryjs2, #tryjsvn2 {
+  display: none;
+}*/
+
+/* Colorful INDIA text with flag at bottom */
+#india-text-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 10px;
+}
+
+#india-text {
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 10px;
+  text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+  background: linear-gradient(to right, #FF9933, #FFFFFF, #138808);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  display: inline-block;
+}
+
+#india-flag {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  width: 80px;
+  height: 60px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  position: relative;
+}
