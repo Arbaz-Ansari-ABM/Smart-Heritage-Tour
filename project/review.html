@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback — Smart Heritage Tour</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --green:#4e6a3e; --cream:#f2efe8; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'DM Sans',sans-serif; background:var(--cream); color:#111; }
+    nav { background:#111; padding:16px 32px; display:flex; justify-content:space-between; align-items:center; }
+    nav a.brand { font-family:'Playfair Display',serif; color:#fff; font-size:1.2rem; text-decoration:none; }
+    nav a.brand span { color:#6a8c56; }
+    nav a.back { color:rgba(255,255,255,0.7); font-size:0.85rem; text-decoration:none; }
+    .hero { background:linear-gradient(135deg,#111,#222); padding:80px 32px; text-align:center; }
+    .hero h1 { font-family:'Playfair Display',serif; font-size:3rem; color:#fff; margin-bottom:12px; }
+    .hero p { color:rgba(255,255,255,0.7); }
+    .form-wrap { max-width:600px; margin:60px auto; padding:0 24px 80px; }
+    .card { background:#fff; border-radius:20px; padding:40px; box-shadow:0 4px 24px rgba(0,0,0,0.08); border:none; }
+    label { font-size:0.72rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:#888; display:block; margin-bottom:6px; margin-top:18px; }
+    input, textarea, select { width:100%; border:1.5px solid #e8e4dc; border-radius:10px; padding:11px 14px; font-family:'DM Sans',sans-serif; font-size:0.88rem; background:#faf9f6; outline:none; transition:border .2s; }
+    input:focus, textarea:focus { border-color:var(--green); }
+    textarea { min-height:120px; resize:none; }
+    .stars-row { display:flex; gap:8px; margin:8px 0; }
+    .stars-row i { font-size:1.5rem; color:#ddd; cursor:pointer; transition:color .15s; }
+    .stars-row i.active, .stars-row i:hover { color:#e8a020; }
+    .btn-submit { width:100%; background:#111; color:#fff; border:none; border-radius:12px; padding:14px; font-family:'DM Sans',sans-serif; font-size:0.85rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; cursor:pointer; margin-top:22px; transition:background .2s; }
+    .btn-submit:hover { background:var(--green); }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="brand"><span>S</span>mart Heritage Tour</a>
+    <a href="index.html" class="back"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+  </nav>
+  <div class="hero">
+    <h1>✍️ Leave Feedback</h1>
+    <p>Share your experience with Smart Heritage Tour</p>
+  </div>
+  <div class="form-wrap">
+    <div class="card">
+      <form action="save.php" method="post">
+        <label>Your Name</label>
+        <input type="text" name="Where_To" placeholder="Enter your name" required>
+        <label>Your Rating</label>
+        <div class="stars-row" id="stars">
+          <i class="fa-solid fa-star" data-v="1"></i>
+          <i class="fa-solid fa-star" data-v="2"></i>
+          <i class="fa-solid fa-star" data-v="3"></i>
+          <i class="fa-solid fa-star" data-v="4"></i>
+          <i class="fa-solid fa-star" data-v="5"></i>
+        </div>
+        <input type="hidden" name="How_Many" value="1">
+        <input type="hidden" name="Arrivals" id="today">
+        <input type="hidden" name="Leaving" id="today2">
+        <label>Your Feedback</label>
+        <textarea name="Feedback" placeholder="Tell us about your experience..." required></textarea>
+        <button type="submit" class="btn-submit">Submit Feedback →</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    document.getElementById('today').value = new Date().toISOString().split('T')[0];
+    document.getElementById('today2').value = new Date().toISOString().split('T')[0];
+    const stars = document.querySelectorAll('#stars i');
+    stars.forEach(s => {
+      s.addEventListener('click', () => {
+        const v = +s.dataset.v;
+        stars.forEach(x => x.classList.toggle('active', +x.dataset.v <= v));
+      });
+    });
+  </script>
+</body>
+</html>
