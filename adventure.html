@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventures — Smart Heritage Tour</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --green:#4e6a3e; --cream:#f2efe8; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'DM Sans',sans-serif; background:var(--cream); color:#111; }
+    nav { background:#111; padding:16px 32px; display:flex; justify-content:space-between; align-items:center; }
+    nav a.brand { font-family:'Playfair Display',serif; color:#fff; font-size:1.2rem; text-decoration:none; }
+    nav a.brand span { color:#6a8c56; }
+    nav a.back { color:rgba(255,255,255,0.7); font-size:0.85rem; text-decoration:none; }
+    nav a.back:hover { color:#fff; }
+    .hero { background:linear-gradient(135deg,#1a1000,#3d2800); padding:80px 32px; text-align:center; }
+    .hero h1 { font-family:'Playfair Display',serif; font-size:3rem; color:#fff; margin-bottom:12px; }
+    .hero p { color:rgba(255,255,255,0.7); font-size:1rem; }
+    .content { max-width:960px; margin:0 auto; padding:60px 24px; }
+    .adv-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:24px; margin-top:40px; }
+    .adv-card { background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.07); transition:transform .25s; }
+    .adv-card:hover { transform:translateY(-5px); }
+    .adv-card img { width:100%; height:180px; object-fit:cover; }
+    .adv-card-body { padding:22px; }
+    .adv-card-body h3 { font-family:'Playfair Display',serif; font-size:1.15rem; margin-bottom:6px; }
+    .adv-card-body p { font-size:0.83rem; color:#666; line-height:1.6; }
+    .tag { display:inline-block; background:#f2efe8; color:var(--green); font-size:0.7rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; padding:3px 10px; border-radius:20px; margin-bottom:10px; }
+    .back-btn { display:inline-flex; align-items:center; gap:8px; background:var(--green); color:#fff; padding:12px 28px; border-radius:30px; text-decoration:none; font-weight:700; font-size:0.85rem; margin-top:40px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="brand"><span>S</span>mart Heritage Tour</a>
+    <a href="index.html" class="back"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+  </nav>
+  <div class="hero">
+    <h1>🏔️ Adventures</h1>
+    <p>Thrilling experiences at India's most stunning heritage and nature destinations</p>
+  </div>
+  <div class="content">
+    <div class="adv-grid">
+      <div class="adv-card">
+        <img src="https://picsum.photos/seed/trek1/600/400" alt="Trekking">
+        <div class="adv-card-body"><div class="tag">Trekking</div><h3>Kedarnath Trek</h3><p>A 16 km trek through breathtaking Himalayan terrain to one of India's holiest shrines.</p></div>
+      </div>
+      <div class="adv-card">
+        <img src="https://picsum.photos/seed/raft1/600/400" alt="Rafting">
+        <div class="adv-card-body"><div class="tag">Water Sports</div><h3>Rishikesh Rafting</h3><p>Experience thrilling white-water rafting on the Ganges with experienced guides.</p></div>
+      </div>
+      <div class="adv-card">
+        <img src="https://picsum.photos/seed/safari1/600/400" alt="Safari">
+        <div class="adv-card-body"><div class="tag">Wildlife</div><h3>Jim Corbett Safari</h3><p>Spot the majestic Royal Bengal Tiger in India's oldest national park.</p></div>
+      </div>
+      <div class="adv-card">
+        <img src="https://picsum.photos/seed/desert1/600/400" alt="Desert">
+        <div class="adv-card-body"><div class="tag">Desert</div><h3>Rajasthan Camel Ride</h3><p>Ride through the golden Thar Desert dunes with a traditional camel safari at sunset.</p></div>
+      </div>
+      <div class="adv-card">
+        <img src="https://picsum.photos/seed/scuba1/600/400" alt="Scuba">
+        <div class="adv-card-body"><div class="tag">Diving</div><h3>Andaman Scuba Diving</h3><p>Discover vibrant coral reefs and marine life in the crystal-clear Andaman waters.</p></div>
+      </div>
+      <div class="adv-card">
+        <img src="https://picsum.photos/seed/paraglide1/600/400" alt="Paragliding">
+        <div class="adv-card-body"><div class="tag">Air Sports</div><h3>Bir Billing Paragliding</h3><p>Soar over the Himalayan valleys from Asia's best paragliding destination in Himachal.</p></div>
+      </div>
+    </div>
+    <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+  </div>
+</body>
+</html>
