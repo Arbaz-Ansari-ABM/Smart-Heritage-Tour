@@ -13,10 +13,10 @@
  */
 
 // ── CHANGE THESE VALUES ──────────────────────────────────────
-define('DB_HOST', 'sql206.infinityfree.com'); // from InfinityFree panel
-define('DB_USER', 'epiz_XXXXXXXX');           // your DB username
-define('DB_PASS', 'your_password_here');      // your DB password
-define('DB_NAME', 'epiz_XXXXXXXX_heritage'); // your DB name
+define('DB_HOST', 'sql309.infinityfree.com'); // from InfinityFree panel
+define('DB_USER', 'if0_41433010_smart_heritage');           // your DB username
+define('DB_PASS', 'Dg3DmjFIwcrsbV4');      // your DB password
+define('DB_NAME', 'if0_41433010_smart_heritage'); // your DB name
 // ────────────────────────────────────────────────────────────
 
 $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
